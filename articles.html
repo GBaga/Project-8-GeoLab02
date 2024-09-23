@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 ლექცია | მთავარი გვერდი</title>
+    <link rel="icon" href="./assets/images/icons8-javascript.svg">
+    <link rel="stylesheet" href="./styles/header-footer.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/articles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="./index.html">
+                    <img class="navbar-logo" src="./assets/images/Logo.svg" alt="logo">
+                </a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="./articles.html" class="nav-link active">Articles</a></li>
+                    <li class="nav-item"><a href="./Pricing.html" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="./About.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="button-container">
+                    <a href="#" class="btn login-btn">Log In</a>
+                    <a href="#" class="btn free-trial-btn">Start Free Trial</a>
+                </div>
+            </div>
+            <hr class="nav-line">
+        </nav>
+    </header>
+    <main>
+        <section class="articles-container">
+            <h1>Latest Articles</h1>
+            <p class="articles-description">Explore our latest articles on a variety of topics to stay informed and
+                inspired.</p>
+
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card">
+                    <img src="./assets/images/geo-eu.webp" alt="Article 1">
+                    <div class="article-content">
+                        <h3>Article Title 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
+                            vestibulum vestibulum.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card">
+                    <img src="./assets/images/workers.jpg" alt="Article 2">
+                    <div class="article-content">
+                        <h3>Article Title 2</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
+                            vestibulum vestibulum.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card">
+                    <img src="./assets/images/iata.jpg" alt="Article 3">
+                    <div class="article-content">
+                        <h3>Article Title 3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae
+                            vestibulum vestibulum.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright-text">
+            All Rights Reserved &copy; <br />
+            2024
+        </p>
+    </footer>
+
+</body>
+
+</html>
