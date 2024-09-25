@@ -44,6 +44,8 @@
 .nav-link:hover {
     background-color: #555;
     color: aqua;
+
+    border-radius: 3px;
 }
 
 /* General Button Styles */
@@ -117,8 +119,13 @@
     font-weight: bold;
 }
 
+.mobile-menue-btns {
+    display: none;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
+
     .nav-menu {
         display: none;
         flex-direction: column;
@@ -128,15 +135,14 @@
         left: -100%;
         background-color: #333;
         transition: 0.5s;
+        z-index: 10;
+        /* Ensure the menu appears above other content */
+        gap: 0;
     }
 
     .nav-menu.active {
         left: 0;
         display: flex;
-    }
-
-    .nav-item {
-        margin: 16px 0;
     }
 
     .menu-toggle {
@@ -154,7 +160,84 @@
     .menu-toggle.is-active .bar:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+
+    /* Position the button container inside the mobile menu */
+    .nav-menu.active {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    .nav-link {
+        color: #fff;
+        font-size: 1.8rem;
+        padding: 10px;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    .nav-link:hover {
+        background-color: #555;
+        color: aqua;
+        border-radius: 3px;
+    }
+
+    /* Ensure the button container is inside the nav menu and styled like the nav items */
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .button-container a {
+        width: 90%;
+        padding: 10px 0;
+        font-size: 1.8rem;
+        text-align: center;
+        margin: 5px auto;
+        background-color: rgba(20, 32, 62, 1);
+        color: #fff;
+        border-radius: 10px;
+    }
+
+    .login-btn {
+        background-color: rgba(246, 240, 232, 1);
+        color: rgba(0, 0, 0, 1);
+    }
+
+    .free-trial-btn {
+        background-color: rgba(20, 32, 62, 1);
+        color: #fff;
+    }
+
+    .nav-menu.active .button-container {
+        display: flex;
+    }
+
+    /* Hide the original button container when not in mobile menu */
+    .button-container {
+        display: none;
+    }
+
+    .mobile-menue-btns {
+        display: flex;
+        background-color: rgba(20, 32, 62, 1);
+    }
+
+    .mobile-menue-btns:hover {
+        background-color: burlywood;
+    }
 }
+
+
+
 
 
 /* Footer styles */
@@ -162,6 +245,7 @@
 
 footer {
     min-height: 60px;
+    height: 100%;
     background-color: #333;
     /* display: flex; */
     /* margin: auto; */
