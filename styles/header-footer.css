@@ -1,32 +1,48 @@
+header {
+    margin: auto;
+    min-width: 1366px;
+    width: 100%;
+    padding: 20px 93px 0 93px;
+    height: 900px;
+    background-image: linear-gradient(to left,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0.8)), url("../assets/images/image-hero-waterfall.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+header h2,
+header p {
+    color: white;
+}
+
 /* Navbar styles */
 .navbar {
-    background: rgba(255, 255, 255, 1);
-    height: 99px;
+    height: 50px;
     display: inline-block;
     width: 100%;
+
 }
 
 .navbar-container {
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
     width: 100%;
-    max-width: 1600px;
-    padding: 0 45px 0 48px;
     margin: auto;
 }
 
 .navbar-logo {
-    width: 59px;
-    height: 29px;
-    margin-top: 6px;
+    width: 154px;
+    height: 46px;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 56px;
-    margin-top: 11px;
+    gap: 50px;
 }
 
 .nav-item {
@@ -34,228 +50,116 @@
 }
 
 .nav-link {
-    color: rgba(20, 32, 62, 1);
-    font-size: 1.8rem;
+    font-family: 'Work Sans';
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 16.42px;
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
-    padding: 0;
-    transition: background-color 0.3s ease;
 }
 
-.nav-link:hover {
-    background-color: #555;
-    color: aqua;
-
-    border-radius: 3px;
+/* Login Buttons */
+.signin-btn,
+.signup-btn {
+    font-weight: 700;
 }
 
-/* General Button Styles */
-.btn {
-    display: inline-block;
-    padding: 13px 30px;
-    font-size: 1.8rem;
-    line-height: 23.4px;
-    font-weight: 400;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background-color 0.3s, color 0.3s;
-    cursor: pointer;
-    box-sizing: border-box;
-
-}
-
-/* Login Button */
-.login-btn {
-    background: rgba(246, 240, 232, 1);
-    color: rgba(0, 0, 0, 1);
-}
-
-.login-btn:hover {
-    background-color: burlywood;
-}
-
-/* Free Trial Button */
-.free-trial-btn {
-    background: rgba(20, 32, 62, 1);
-    color: #fff;
-}
-
-.free-trial-btn:hover {
+.signin-btn:hover {
     background-color: burlywood;
 }
 
 /* Button Container Styling */
 .button-container {
     display: flex;
-    gap: 15px;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-
-.nav-line {
-    width: 100%;
-    height: 1Px;
-    background: rgba(244, 232, 216, 1);
-    border: none;
-    margin-top: 25px;
-}
-
-/* Mobile Menu Toggle */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar {
-    height: 3px;
-    width: 25px;
-    background: rgba(20, 32, 62, 1);
-    margin: 4px 0;
-    transition: all 0.3s ease;
+    gap: 33px;
 }
 
 .active {
     font-weight: bold;
+    color: yellow;
 }
-
-.mobile-menue-btns {
-    display: none;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-
-    .nav-menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 70px;
-        left: -100%;
-        background-color: #333;
-        transition: 0.5s;
-        z-index: 10;
-        /* Ensure the menu appears above other content */
-        gap: 0;
-    }
-
-    .nav-menu.active {
-        left: 0;
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .menu-toggle.is-active .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .menu-toggle.is-active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.is-active .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
-    }
-
-    /* Position the button container inside the mobile menu */
-    .nav-menu.active {
-        flex-direction: column;
-    }
-
-    .nav-item {
-        margin: 16px 0;
-        text-align: center;
-        margin: 0;
-    }
-
-    .nav-link {
-        color: #fff;
-        font-size: 1.8rem;
-        padding: 10px;
-        text-align: center;
-        display: block;
-        width: 100%;
-    }
-
-    .nav-link:hover {
-        background-color: #555;
-        color: aqua;
-        border-radius: 3px;
-    }
-
-    /* Ensure the button container is inside the nav menu and styled like the nav items */
-    .button-container {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin: 10px auto;
-        width: 100%;
-    }
-
-    .button-container a {
-        width: 90%;
-        padding: 10px 0;
-        font-size: 1.8rem;
-        text-align: center;
-        margin: 5px auto;
-        background-color: rgba(20, 32, 62, 1);
-        color: #fff;
-        border-radius: 10px;
-    }
-
-    .login-btn {
-        background-color: rgba(246, 240, 232, 1);
-        color: rgba(0, 0, 0, 1);
-    }
-
-    .free-trial-btn {
-        background-color: rgba(20, 32, 62, 1);
-        color: #fff;
-    }
-
-    .nav-menu.active .button-container {
-        display: flex;
-    }
-
-    /* Hide the original button container when not in mobile menu */
-    .button-container {
-        display: none;
-    }
-
-    .mobile-menue-btns {
-        display: flex;
-        background-color: rgba(20, 32, 62, 1);
-    }
-
-    .mobile-menue-btns:hover {
-        background-color: burlywood;
-    }
-}
-
-
 
 
 
 /* Footer styles */
 
-
 footer {
-    min-height: 60px;
-    background-color: #333;
-    /* display: flex; */
-    /* margin: auto; */
-    justify-content: center;
-    align-items: center;
-    color: aqua;
-    box-sizing: border-box;
+    width: 1366px;
+    height: 398px;
+    margin: auto;
+    background-image: linear-gradient(to left,
+            rgba(30, 30, 30, 0.8),
+            rgba(30, 30, 30, 0.8)),
+        url(../assets/images/img-nature-trees.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 70px 93px;
 }
 
-.copyright-text {
-    font-size: 1.6rem;
-    text-align: right;
-    padding: 10px 100px;
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 1180px;
+    height: 259px;
+    color: white;
+    column-gap: 64px;
+}
+
+.footer-container p,
+.footer-container li,
+.footer-container a {
+    color: white;
+
+
+}
+
+.logo-container {
+    width: 380px;
+    height: 259px;
+    color: white;
+}
+
+.logo-container>img {
+    width: 273px;
+    height: 82px;
+    margin-bottom: 8px;
+}
+
+.footer-description {
+    margin-bottom: 26px;
+
+}
+
+.icon-container {
+    width: 156px;
+    height: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.last-child {
+    width: 332px;
+    height: 235px;
+}
+
+
+.footer-container li,
+.footer-container a {
+    font-family: 'Work Sans';
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 44px;
+}
+
+h6 {
+    font-family: 'Work Sans';
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 30.5px;
+    margin-bottom: 28px;
 }
