@@ -4,18 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>02 ლექცია | მთავარი გვერდი</title>
+    <title>04 ლექცია | Travel around the world</title>
     <link rel="icon" href="./assets/images/icons8-javascript.svg">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/header-footer.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="./script.js" defer></script>
 
-    <!-- html-ში ფონტების შემოტანა
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    -->
 </head>
 
 <body>
@@ -24,16 +18,13 @@
         <!-- Navbar -->
         <nav class="navbar">
             <div class="navbar-container">
-                <a href="./index.html">
-                    <img class="navbar-logo" src="./assets/images/Logo.svg" alt="logo">
+
+                <a href="#">
+                    <img class="navbar-logo" src="./assets/images/logo-red.svg" alt="logo">
                 </a>
-                <div class="menu-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
 
                 <ul class="nav-menu">
+<<<<<<< HEAD
                     <li class=" nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a href="./articles.html" class="nav-link">Articles</a></li>
                     <li class="nav-item"><a href="./pricing.html" class="nav-link">Pricing</a></li>
@@ -42,73 +33,339 @@
                     <li class="nav-item mobile-menue-btns"><a href="./contact.html" class="nav-link">Log In</a></li>
                     <li class="nav-item mobile-menue-btns"><a href="./contact.html" class="nav-link">Start Free
                             Trial</a></li>
+=======
+                    <li class=" nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#reviews" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li class="nav-item"><a href="#tours" class="nav-link">Tours</a></li>
+                    <li class="nav-item"><a href="#activity" class="nav-link">Shop</a></li>
+                    <li class="nav-item"><a href="#photos" class="nav-link">Blogs</a></li>
+>>>>>>> 1ccaaed766e4c8231c919edcc44fd5e58c3267a3
 
                 </ul>
 
                 <div class="button-container">
-                    <a href="#" class="btn login-btn">Log In</a>
-                    <a href="#" class="btn free-trial-btn">Start Free Trial</a>
+                    <a href="#" class="nav-link  signin-btn">Sign In</a>
+                    <a href="#" class="nav-link btn signup-btn">Sign Up</a>
                 </div>
             </div>
-
-            <hr class="nav-line">
         </nav>
+
+        <div class="letsgo-container">
+            <h2>Explorer and Travel</h2>
+            <h1>Let’s Go Now</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+            </p>
+            <div class="search-container">
+                <div class="location-box">
+                    <img src="./assets/images/icon-location.png" alt="location-icon">
+                    <div class="location-descr">
+                        <p class="location-title">Location</p>
+                        <p class="location-country">Tailand</p>
+                    </div>
+                </div>
+
+                <hr class="search-container-horizontal-line">
+
+                <div class="calendar-box">
+                    <img src="./assets/images/icon-calendar.png" alt="calendar-icon">
+                    <div class="calendar-descr">
+                        <p class="calendar-title">Date</p>
+                        <p class="calendar-date">13 May, 2023</p>
+                    </div>
+                </div>
+                <button class="search">
+                    <img src="./assets/images/icon-search.png" alt="search-icon">
+                </button>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="section-1">
-            <h1>A modern way to <br> build websites.</h1>
-            <p class="section-1-paragraph">
-                Empower designers to build professional,
-                custom websites <br>in a completely visual canvas with no code.
+        <section id="destinations" class="destinations">
+            <h2 class="choose-yours-headline">Choose yours</h2>
+            <h3 class="destination-headline">DESTINATION</h3>
+            <div class="destination-container">
+                <div class="destination-city-1">
+                    <h2 class="destination-city-name">Malaysia</h2>
+                    <button>16 Tours</button>
+                </div>
+                <div class="destination-city-2">
+                    <h2 class="destination-city-name">Dubai</h2>
+                    <button>16 Tours</button>
+                </div>
+                <div class="destination-city-3">
+                    <h2 class="destination-city-name">Greece</h2>
+                    <button>16 Tours</button>
+                </div>
+                <div class="destination-city-4">
+                    <h2 class="destination-city-name">Singapore</h2>
+                    <button>16 Tours</button>
+                </div>
+            </div>
+            <button class="btn-more">View More</button>
+        </section>
+
+        <section id="activity" class="activity">
+            <h2 class="travel-by">Travel by</h2>
+            <h3 class="activity-headline">ACIVITY</h3>
+            <p class="section-description">Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
             </p>
-            <a href="#" class="btn section-1-btn">Start Free Trial</a>
+            <div class="activity-container">
+                <div class="activity-card first-card">
+                    <img src="/assets/images/img-adventurer.png" alt="img-adventurer">
+                    <h4 class="card-activity-adventurer-title">Adventure</h4>
+                    <p class="card-activity-adventurer-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy
+                        text ever since the 1500s.
+                    </p>
+                </div>
+                <div class="activity-card">
+                    <img src="/assets/images/img-camping.png" alt="img-camping">
+                    <h4 class="card-activity-camping-title">Camping</h4>
+                    <p class="card-activity-camping-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy
+                        text ever since the 1500s.
+                    </p>
+                </div>
+                <div class="activity-card">
+                    <img src="/assets/images/img-trekking.png" alt="img-trekking">
+                    <h4 class="card-activity-trekking-title">Trekking</h4>
+                    <p class="card-activity-trekking-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy
+                        text ever since the 1500s.
+                    </p>
+                </div>
+                <div class="activity-card">
+                    <img src="/assets/images/img-off-road.png" alt="img-off-road">
+                    <h4 class="card-activity-offroad-title">Off Road</h4>
+                    <p class="card-activity-offroad-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy
+                        text ever since the 1500s.
+                    </p>
+                </div>
+                <div class="activity-card">
+                    <img src="/assets/images/img-camp-fire.png" alt="img-camp-fire">
+                    <h4 class="card-activity-campfire-title">Camp Fire</h4>
+                    <p class="card-activity-campfire-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy
+                        text ever since the 1500s.
+                    </p>
+                </div>
+                <div class="activity-card">
+                    <img src="/assets/images/img-calendar.png" alt="img-calendar">
+                    <h4 class="card-activity-calendar-title">Expiring</h4>
+                    <p class="card-activity-calendar-description">
+                        Lorem Ipsum is simply dummy
+                        text of the printing and typesetting industry. Lorem
+                        Ipsum has been the industry's standard dummy
+                        text ever since the 1500s.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tours" class="tours">
+
+            <h2 class="popular">Popular</h2>
+            <h3 class="tours-headline">TOUR PACKAGES</h3>
+            <p class="section-description">Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+
+            <div class="tours-container">
+                <div class="tours-card">
+                    <img src="./assets/images/img-rome.png" alt="img-rome">
+                    <div class="tour-details">
+                        <div class="city-duration">
+                            <h5 class="city">ROME, ITALY</h5>
+                            <p class="duration">10 days trip</p>
+                        </div>
+                        <p class="price">$5.24K</p>
+                    </div>
+                </div>
+                <div class="tours-card">
+                    <img src="./assets/images/img-lahore.jpg" alt="img-lahore">
+                    <div class="tour-details">
+                        <div class="city-duration">
+                            <h5 class="city">LAHORE, PAKISTAN</h5>
+                            <p class="duration">6 days trip</p>
+                        </div>
+                        <p class="price">$3.25K</p>
+                    </div>
+                </div>
+                <div class="tours-card">
+                    <img src="./assets/images/img-singapore-aerial-view.png" alt="img-singapore-aerial-view">
+                    <div class="tour-details">
+                        <div class="city-duration">
+                            <h5 class="city">SINGAPORE</h5>
+                            <p class="duration">6 days trip</p>
+                        </div>
+                        <p class="price">$7.00K</p>
+                    </div>
+                </div>
+            </div>
 
         </section>
 
+        <section id="photos" class="photos">
 
-        <section class="section-2">
-            <div class="divider-line-container">
-                <span class="line"></span>
-                <h3>We share our thoughts on design</h3>
-                <span class="line"></span>
+            <h2 class="popular">Best Traveler’s</h2>
+            <h3 class="tours-headline">SHARED PHOTOS</h3>
+            <p class="section-description">Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+
+            <div class="photo-container">
+                <div class="photo-card"><img src="./assets/images/img-air-ballons.png" alt="img-air-ballons"></div>
+                <div class="photo-card"><img src="./assets/images/img-tourist-city.jpg" alt="img-tourist-city"></div>
+                <div class="photo-card"><img src="./assets/images/img-tourist-running-bridge.jpg"
+                        alt="img-tourist-running-bridge"></div>
+                <div class="photo-card"><img src="./assets/images/img-couples-mountain.jpg" alt="img-couples-mountain">
+                </div>
+                <div class="photo-card"><img src="./assets/images/img-tourist-sea.jpg" alt="img-tourist-sea"></div>
+                <div class="photo-card"><img src="./assets/images/img-city-view-shore.jpg" alt="img-city-view-shore">
+                </div>
             </div>
-            <div class="card-container">
-                <div class="card">
-                    <img src="./assets/images/trend.jpg" alt="Card-Image-trend">
-                    <h2>Redesigning my site increased sales by over 400% in one week.</h3>
-                        <p class="date">
-                            Jul 1, 2020
-                        </p>
+
+        </section>
+
+        <section id="reviews" class="reviews">
+
+            <h2 class="testimonials">Review & Testimonials</h2>
+            <h3 class="reviews-headline">TOP REVIEWS FOR ETOUR</h3>
+            <p class="section-description">Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy
+                text ever since the 1500s.
+
+            <div class="reviews-container">
+                <img src="./assets/images/icon-suffix.png" alt="icon-suffix">
+                <p class="quote">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                    has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                    galley of type and scrambled it to make a type specimen book. It has survived not only five
+                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                    popularised in the 1960s.....
+                </p>
+
+                <div class="user-photos-container">
+                    <img src="./assets/images/img-first-girl.png" alt="img-first-girl" class="user-photo">
+                    <img src="./assets/images/img-second-guy.png" alt="img-second-guy" class="user-photo">
+                    <img src="./assets/images/img-third-woman.png" alt="img-third-woman" class="user-photo">
+                    <div class="scarlett">
+                        <img src="./assets/images/img-fourth-girl-scarlett.png" alt="img-fourth-girl-scarlett"
+                            class="user-photo">
+                        <div class="user-scarlett">
+                            <h5 class="tourist-name">Scarlett Thomas</h5>
+                            <p class="country-origin">Singapore</p>
+                        </div>
+                    </div>
+
+                    <img src="./assets/images/img-fifth-woman.png" alt="img-fifth-woman" class="user-photo">
+                    <img src="./assets/images/img-last-girl.png" alt="img-last-girl" class="user-photo">
                 </div>
-                <div class="card">
-                    <img src="./assets/images/bottles.png" alt="Card-mage-bottles">
-                    <h2>Design handoff: What engineers really want to see</h2>
-                    <p class="date">
-                        Jul 1, 2020
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/couple.png" alt="Card-Image-coupe">
-                    <h2>A comprehensive list of human-computer interactions</h2>
-                    <p class="date">
-                        Jul 1, 2020
-                    </p>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/painting.png" alt="Card-Image-painting">
-                    <h2>Why do people hate redesigns?</h2>
-                    <p class="date">
-                        Jul 1, 2020
-                    </p>
-                </div>
+
+            </div>
+
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <div class="building">
+
+            </div>
+
+            <div class="neswletter-container">
+                <h3 class="neswletter-headline">
+                    Get Our Monthly <br> Newsletter
+                </h3>
+                <p class="newsletter-description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                </p>
+
+                <form class="newsletter-form">
+                    <input type="email" class="newsletter-input" placeholder="Input your email address in here">
+                    <button type="submit" class="newsletter-btn">
+                        <img src="./assets/images/icon-arrow-right.png" alt="icon-arrow-right">
+                    </button>
+                </form>
+
             </div>
         </section>
+
     </main>
     <footer>
-        <p class="copyright-text">
-            All Rights Reserved &copy; <br />
-            2024
-        </p>
+        <div class="footer-container">
+            <div class="logo-container">
+                <img src="./assets/images/logo-white.svg" alt="logo">
+                <p class="footer-description">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book.
+                </p>
+                <div class="icon-container">
+                    <img src="./assets/images/icon-fb.png" alt="icon-fb">
+                    <img src="./assets/images/icon-instagram.png" alt="icon-instagram">
+                    <img src="./assets/images/icon-youtube.png" alt="icon-youtube">
+                    <img src="/assets/images/icon-twitter.png" alt="icon-twitter">
+                </div>
+            </div>
+
+            <ul>
+                <li class="li-title">
+                    <h6>About</h6>
+                </li>
+                <li><a href="">Menu</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">News & Blogs</a></li>
+                <li><a href="">Help & Supports</a></li>
+            </ul>
+
+            <ul>
+                <li class="li-title">
+                    <h6>Company</h6>
+                </li>
+                <li><a href="">How we work</a></li>
+                <li><a href="">Terms of service</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+
+            <ul class="last-child">
+                <li class="li-title">
+                    <h6>Company</h6>
+                </li>
+                <li>
+                    Akshya Nagar 1st Block 1st Cross, Rammurthy nagar, Bangalore-560016
+                </li>
+                <li> +1 202-918-2132 </li>
+                <li> listeetravel@mail.com </li>
+                <li> www.listeetravel.com </li>
+
+            </ul>
+        </div>
     </footer>
 
 </body>
