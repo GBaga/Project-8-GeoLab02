@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/header-footer.css">
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/pricing.css">
     <script src="./script.js" defer></script>
 </head>
 
@@ -30,9 +30,9 @@
                 <ul class="nav-menu">
                     <li class=" nav-item"><a href="./index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="./articles.html" class="nav-link">Articles</a></li>
-                    <li class="nav-item"><a href="./Pricing.html" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="./Pricing.html" class="nav-link active">Pricing</a></li>
                     <li class="nav-item"><a href="./About.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="./contact.html" class="nav-link active">Contact</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
                     <li class="nav-item mobile-menue-btns"><a href="./contact.html" class="nav-link">Log In</a></li>
                     <li class="nav-item mobile-menue-btns"><a href="./contact.html" class="nav-link">Start Free
                             Trial</a></li>
@@ -47,37 +47,41 @@
         </nav>
     </header>
     <main>
-        <div class="contact-container">
-            <h1>Contact Us</h1>
-            <p>If you have any questions, feel free to contact us through the form below.</p>
+        <section class="About-container">
+            <h1>Our Services and Pricing</h1>
+            <p class="About-description">We offer a range of high-quality About tailored to meet your business
+                needs.</p>
 
-            <div class="contact-form">
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
+            <div class="About-grid">
+                <!-- Service 1 -->
+                <div class="service-box">
+                    <img src="./assets/images/business-services.jpeg" alt="Service-business">
+                    <h3>Service 1</h3>
+                    <p>We provide expert solutions in this area to help your business thrive.</p>
+                </div>
 
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
+                <!-- Service 2 -->
+                <div class="service-box">
+                    <img src="./assets/images/conslulting.jpg" alt="Service-consluting">
+                    <h3>Service 2</h3>
+                    <p>Our dedicated team ensures that you receive top-notch service and support.</p>
+                </div>
 
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject">
-                    </div>
+                <!-- Service 3 -->
+                <div class="service-box">
+                    <img src="./assets/images/IT services .jpg" alt="Service-it">
+                    <h3>Service 3</h3>
+                    <p>Delivering innovative solutions to meet the demands of your industry.</p>
+                </div>
 
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn ">Send Message</button>
-                </form>
+                <!-- Service 4 -->
+                <div class="service-box">
+                    <img src="./assets/images/marketing.webp" alt="Service-marketing">
+                    <h3>Service 4</h3>
+                    <p>Providing specialized knowledge and About tailored to your needs.</p>
+                </div>
             </div>
-        </div>
-
+        </section>
     </main>
     <footer>
         <p class="copyright-text">
